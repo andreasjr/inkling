@@ -24,34 +24,39 @@
 			},
 			"spacingSizes": [
 				{
+					"size": "clamp(0.5rem, 5vw, 1rem)",
+					"slug": "20",
+					"name": "2"
+				},
+				{
 					"size": "clamp(1.5rem, 5vw, 2rem)",
 					"slug": "30",
-					"name": "1"
+					"name": "3"
 				},
 				{
 					"size": "clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem)",
 					"slug": "40",
-					"name": "2"
+					"name": "4"
 				},
 				{
 					"size": "clamp(2.5rem, 8vw, 4.5rem)",
 					"slug": "50",
-					"name": "3"
+					"name": "5"
 				},
 				{
 					"size": "clamp(3.75rem, 10vw, 7rem)",
 					"slug": "60",
-					"name": "4"
+					"name": "6"
 				},
 				{
 					"size": "clamp(5rem, 5.25rem + ((1vw - 0.48rem) * 9.096), 8rem)",
 					"slug": "70",
-					"name": "5"
+					"name": "7"
 				},
 				{
 					"size": "clamp(7rem, 14vw, 11rem)",
 					"slug": "80",
-					"name": "6"
+					"name": "8"
 				}
 			]
 		},
@@ -246,14 +251,16 @@
 			"background": "var(--wp--preset--color--base)"
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--normal)"
+			"fontFamily": "var(--wp--preset--font-family--normal)",
+			"lineHeight": "1.5",
+			"fontSize": "var(--wp--preset--font-size--3)"
 		},
 		"spacing": {
 			"blockGap": "1em",
 			"padding": {
 				"left": "clamp(0.5em, 9vw, 5.93em)",
 				"right": "clamp(0.5em, 9vw, 5.93em)",
-				"top": "124px",
+				"top": "0",
 				"bottom": "2em"
 			}
 		},
@@ -279,6 +286,36 @@
 			"heading": {
 				"typography": {
 					"fontWeight": "600"
+				}	
+			},
+			"h1": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--9)"
+				}	
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--8)"
+				}	
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--7)"
+				}	
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--6)"
+				}	
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--5)"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--4)"
 				}	
 			}
 		},
