@@ -13,3 +13,59 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: concept
 Tags: blog, portfolio, grid-layout, one-column, wide-blocks, accessibility-ready, block-patterns, block-styles, custom-background, custom-colors, custom-header, custom-logo, featured-images, full-site-editing, notion, markdown, simple, concept
 */
+
+a:where(:not(.wp-element-button):not(.wp-block-site-title a):not(.wp-block-post-title a)) {
+	opacity: 0.7;
+	transition: all .2s ease-in-out;
+}
+a:where(:not(.wp-element-button):not(.wp-block-site-title a):not(.wp-block-post-title a)):hover {
+	opacity: 1;
+}
+
+.has-gray-background-color,
+.has-brown-background-color,
+.has-orange-background-color,
+.has-yellow-background-color,
+.has-green-background-color,
+.has-blue-background-color,
+.has-purple-background-color,
+.has-pink-background-color,
+.has-red-background-color {
+	background-image: linear-gradient(0deg, var(--wp--preset--color--tint), var(--wp--preset--color--tint));
+	/* position: relative !important; */
+	/* z-index: 1; */
+	/* transform-style: preserve-3d; */
+}
+/* .has-gray-background-color > *,
+.has-brown-background-color > *,
+.has-orange-background-color > *,
+.has-yellow-background-color > *,
+.has-green-background-color > *,
+.has-blue-background-color > *,
+.has-purple-background-color > *,
+.has-pink-background-color > *,
+.has-red-background-color > * {
+	position: relative; */
+	/* z-index: 1;
+}
+.has-gray-background-color::before,
+.has-brown-background-color::before,
+.has-orange-background-color::before,
+.has-yellow-background-color::before,
+.has-green-background-color::before,
+.has-blue-background-color::before,
+.has-purple-background-color::before,
+.has-pink-background-color::before,
+.has-red-background-color::before {
+	position: absolute;
+	background-color: rgba(255,255,255,.90);
+	background-color: inherit;
+	z-index: -1;
+	transform: translateZ(-1px);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	content: "";
+} */
