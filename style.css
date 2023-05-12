@@ -14,12 +14,35 @@ Text Domain: concept
 Tags: blog, portfolio, grid-layout, one-column, wide-blocks, accessibility-ready, block-patterns, block-styles, custom-background, custom-colors, custom-header, custom-logo, featured-images, full-site-editing, notion, markdown, simple, concept
 */
 
-a:where(:not(.wp-element-button):not(.wp-block-site-title a):not(.wp-block-post-title a)) {
+a:where(:not(.wp-element-button):not(.wp-block-site-title a):not(.wp-block-post-title a):not(:has(img))) {
 	opacity: 0.7;
 	transition: all .2s ease-in-out;
 }
 a:where(:not(.wp-element-button):not(.wp-block-site-title a):not(.wp-block-post-title a)):hover {
 	opacity: 1;
+}
+
+header.wp-block-template-part {
+	position: sticky;
+	top: 0px;
+	z-index: 10;
+}
+.admin-bar header.wp-block-template-part  {
+	top: 32px;
+}
+@media screen and (max-width: 782px) {
+	.admin-bar header.wp-block-template-part  {
+		top: 46px;
+	}
+}
+html:not(.has-modal-open) header.wp-block-template-part {
+	backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+
+.entry-content p img {
+	max-width: 100%;
 }
 
 .has-gray-background-color,
