@@ -352,5 +352,23 @@
 			"title": "Footer"
 		}
 	],
+	"customTemplates": [
+		{
+			"name": "serif",
+			"postTypes": [
+				"page",
+				"post"
+			],
+			"title": "Serif"
+		},
+		{
+			"name": "mono",
+			"postTypes": [
+				"page",
+				"post"
+			],
+			"title": "Mono"
+		}
+	],
 	"version": 2
 }
