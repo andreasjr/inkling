@@ -75,7 +75,7 @@
 					"slug": "contrast"
 				},
 				{
-					"color": "rgb(255,255,254)",
+					"color": "rgb(35, 131, 226)",
 					"name": "Primary",
 					"slug": "primary"
 				},
@@ -220,8 +220,14 @@
 				},
 				{
 					"fluid":false,
-					"size": "1em",
+					"size": "0.875em",
 					"name": "3",
+					"slug": "3"
+				},
+				{
+					"fluid":false,
+					"size": "1em",
+					"name": "4",
 					"slug": "4"
 				},
 				{
@@ -243,6 +249,9 @@
 					"slug": "9"
 				}
 			]
+		},
+		"custom": {
+			"styleOpacity": "0.65"
 		}
 	},
 	"styles": {
@@ -253,7 +262,7 @@
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--normal)",
 			"lineHeight": "1.5",
-			"fontSize": "var(--wp--preset--font-size--3)"
+			"fontSize": "var(--wp--preset--font-size--4)"
 		},
 		"spacing": {
 			"blockGap": "1em",
@@ -281,6 +290,37 @@
 				},
 				":hover": {
 					"css": "opacity: 1"
+				}
+			},
+			"caption": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--2)",
+					"lineHeight": "1.4"
+				}
+			},
+			"button": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--2)",
+					"lineHeight": "1.1",
+					"fontWeight": "500"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--white)",
+					"background": "var(--wp--preset--color--primary)"
+				},
+				"border": {
+					"radius": "0.1875em",
+					"width": "1px",
+					"color": "rgba(55, 53, 47, 0.16)",
+					"style": "solid"
+				},
+				"spacing": {
+					"padding": {
+						"left": "0.5em",
+						"right": "0.5em",
+						"top": "0.5em",
+						"bottom": "0.5em"
+					}
 				}
 			},
 			"heading": {
@@ -335,6 +375,46 @@
 						"border": {
 							"style": "none"
 						}
+					}
+				}
+			},
+			"core/button": {
+				"variations": {
+					"outline": {
+						"border": {
+							"radius": "3px",
+							"width": "0"
+						},
+						"spacing": {
+							"padding": {
+								"left": "calc(0.5em + 1px)",
+								"right": "calc(0.5em + 1px)",
+								"top": "calc(0.5em + 1px)",
+								"bottom": "calc(0.5em + 1px)"
+							}
+						}
+					}
+				}
+			},
+			"core/separator": {
+				"border": {
+					"bottom": {
+						"style": "none"
+					}
+				}
+			},
+			"core/quote": {
+				"border": {
+					"left": {
+						"style": "solid",
+						"color": "var(--wp--preset--color--contrast)",
+						"width": "0.1875em"
+					}
+				},
+				"spacing": {
+					"padding": {
+						"left": "0.875em",
+						"right": "0.875em"
 					}
 				}
 			}
