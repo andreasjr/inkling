@@ -4,7 +4,7 @@
 	"title": "Dark",
 	"settings": {
 		"custom": {
-			"isDark": "true"
+			"styleOpacity": "0.43"
 		},
 		"color": {
 			"palette": [
@@ -19,7 +19,7 @@
 					"slug": "contrast"
 				},
 				{
-					"color": "rgb(255,255,254)",
+					"color": "rgb(35, 131, 226)",
 					"name": "Primary",
 					"slug": "primary"
 				},
