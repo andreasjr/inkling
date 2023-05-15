@@ -214,6 +214,44 @@
 							]
 						}
 					]
+				},
+				{
+					"fontFamily": "Mono",
+					"slug": "mono",
+					"fontFace": [
+						{
+							"fontFamily": "Mono",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/iAWriterMonoS-Regular.ttf"
+							]
+						},
+						{
+							"fontFamily": "Mono",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/iAWriterMonoS-Bold.ttf"
+							]
+						},
+						{
+							"fontFamily": "Mono",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/iAWriterMonoS-Italic.ttf"
+							]
+						},
+						{
+							"fontFamily": "Mono",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/iAWriterMonoS-BoldItalic.ttf"
+							]
+						}
+					]
 				}
 			],
 			"fontSizes": [
@@ -487,6 +525,17 @@
 				}
 			},
 			"core/post-featured-image": {
+				"elements": {
+					"link": {
+						"border": {
+							"bottom": {
+								"style": "none"
+							}
+						}
+					}
+				}
+			},
+			"core/site-logo": {
 				"elements": {
 					"link": {
 						"border": {
