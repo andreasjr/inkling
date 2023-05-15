@@ -1,14 +1,15 @@
 === Concept ===
 Contributors: Andreas Reif
-Requires at least: 5.8
+Requires at least: 6.2
 Tested up to: 6.2
-Requires PHP: 5.7
+Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-A theme that resemble\'s Notion\'s UI.
+A theme for WordPress that is inspired
+by the UI and aesthetic of Notion.
 
 == Changelog ==
 
@@ -17,8 +18,8 @@ A theme that resemble\'s Notion\'s UI.
 
 == Copyright ==
 
-Concepts WordPress Theme, (C) 2023 Andreas Reif
-Concepts is distributed under the terms of the GNU GPL.
+Concept WordPress Theme, (C) 2023 Andreas Reif
+Concept is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
