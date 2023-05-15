@@ -13,7 +13,7 @@ by the UI and aesthetic of Notion.
 
 == Changelog ==
 
-= 0.0.1 =
+= 0.8.0 =
 * Initial release
 
 == Copyright ==

@@ -7,7 +7,7 @@ Description: A theme for WordPress that is inspired by the UI and aesthetic of N
 Requires at least: 6.2
 Tested up to: 6.2
 Requires PHP: 7.4
-Version: 0.5.0
+Version: 0.8.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: concept
@@ -125,6 +125,41 @@ header.wp-block-template-part {
 			border: solid 1px;
 			border-radius: inherit;
 			opacity: .5;
+		}
+	}
+}
+
+/** Page Properties */
+.is-style-page-property {
+	&.wp-block-post-terms {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		.wp-block-post-terms__separator {
+			display: none;
+		}
+		&::before {
+			grid-row-start: 1;
+			// grid-row-end: span -1;
+			grid-row-end: 999;
+			display: block;
+			opacity: 0.5;
+			margin-bottom: var(--wp--preset--spacing--20);
+		}
+		&.taxonomy-category::before {
+			content: "Categories";
+		}
+		&.taxonomy-post_tag::before {
+			content: "Tags";
+		}
+		a {
+			border-bottom: none;
+			margin-bottom: var(--wp--preset--spacing--20);
+		}
+		@media screen and (min-width: 601px) {
+			display: grid;
+			grid-template-columns: 10rem 1fr;
+			// grid-auto-rows: 1fr;
 		}
 	}
 }
