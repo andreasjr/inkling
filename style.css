@@ -1,135 +1,15 @@
-/*
+/*!
 Theme Name: Concept
 Theme URI: https://github.com/andreasjr/concept
 Author: Andreas Reif
 Author URI: https://andreasjr.com
-Description: A theme that resemble's Notion's UI.
-Requires at least: 5.8
+Description: A theme for WordPress that is inspired by the UI and aesthetic of Notion.
+Requires at least: 6.2
 Tested up to: 6.2
-Requires PHP: 5.7
-Version: 0.0.1
+Requires PHP: 7.4
+Version: 0.5.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: concept
 Tags: blog, portfolio, grid-layout, one-column, wide-blocks, accessibility-ready, block-patterns, block-styles, custom-background, custom-colors, custom-header, custom-logo, featured-images, full-site-editing, notion, markdown, simple, concept
-*/
-
-.wp-site-blocks a:where(:not(.wp-element-button):not(.wp-block-site-title a):not(.wp-block-post-title a):not(:has(img))) {
-	opacity: 0.7;
-	transition: all .2s ease-in-out;
-}
-.wp-site-blocks a:where(:not(.wp-element-button):not(.wp-block-site-title a):not(.wp-block-post-title a)):hover {
-	opacity: 1;
-}
-
-header.wp-block-template-part {
-	position: sticky;
-	top: 0px;
-	z-index: 10;
-}
-.admin-bar header.wp-block-template-part  {
-	top: 32px;
-}
-@media screen and (max-width: 782px) {
-	.admin-bar header.wp-block-template-part  {
-		top: 46px;
-	}
-}
-html:not(.has-modal-open) header.wp-block-template-part {
-	backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-}
-
-
-.entry-content p img {
-	max-width: 100%;
-}
-
-.has-gray-background-color,
-.has-brown-background-color,
-.has-orange-background-color,
-.has-yellow-background-color,
-.has-green-background-color,
-.has-blue-background-color,
-.has-purple-background-color,
-.has-pink-background-color,
-.has-red-background-color {
-	background-image: linear-gradient(0deg, var(--wp--preset--color--tint), var(--wp--preset--color--tint));
-	/* position: relative !important; */
-	/* z-index: 1; */
-	/* transform-style: preserve-3d; */
-}
-/* .has-gray-background-color > *,
-.has-brown-background-color > *,
-.has-orange-background-color > *,
-.has-yellow-background-color > *,
-.has-green-background-color > *,
-.has-blue-background-color > *,
-.has-purple-background-color > *,
-.has-pink-background-color > *,
-.has-red-background-color > * {
-	position: relative; */
-	/* z-index: 1;
-}
-.has-gray-background-color::before,
-.has-brown-background-color::before,
-.has-orange-background-color::before,
-.has-yellow-background-color::before,
-.has-green-background-color::before,
-.has-blue-background-color::before,
-.has-purple-background-color::before,
-.has-pink-background-color::before,
-.has-red-background-color::before {
-	position: absolute;
-	background-color: rgba(255,255,255,.90);
-	background-color: inherit;
-	z-index: -1;
-	transform: translateZ(-1px);
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	display: block;
-	content: "";
-} */
-
-.wp-element-caption {
-	opacity: var(--wp--custom--style-opacity);
-}
-.wp-block-separator {
-	opacity: 0.15;
-}
-
-/* Buttons */
-.wp-element-button {
-	opacity: 1;
-	transition: all .2s ease-in-out;
-}
-.wp-element-button:hover,
-.wp-element-button:focus {
-	opacity: 1;
-	filter: brightness(120%);
-}
-.wp-element-button:active {
-	filter: brightness(80%);
-}
-
-.wp-element-button.has-background {
-	color: var(--wp--preset--color--contrast);	
-}
-
-.wp-block-button.is-style-outline .wp-element-button {
-	position: relative;
-	/* overflow: hidden; */
-}
-.wp-block-button.is-style-outline .wp-element-button::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	border: solid 1px;
-	border-radius: inherit;
-	opacity: .5;
-}
+*/.wp-site-blocks a:where(:not(.wp-element-button):not(.wp-block-site-title a):not(.wp-block-post-title a):not(:has(img)):not(.wp-block-navigation a)){opacity:.7;transition:all .2s ease-in-out}.wp-site-blocks a:where(:not(.wp-element-button):not(.wp-block-site-title a):not(.wp-block-post-title a):not(:has(img)):not(.wp-block-navigation a)):hover,.wp-site-blocks a:where(:not(.wp-element-button):not(.wp-block-site-title a):not(.wp-block-post-title a):not(:has(img)):not(.wp-block-navigation a)):focus{opacity:1}header.wp-block-template-part{position:sticky;top:0px;z-index:10}header.wp-block-template-part a{transition:all .2s ease-in-out}html:not(.has-modal-open) header.wp-block-template-part{backdrop-filter:blur(25px);-webkit-backdrop-filter:blur(25px)}@media screen and (min-width: 783px){.admin-bar header.wp-block-template-part{top:32px}}.wp-block-navigation .has-modal-open .wp-block-navigation__responsive-close{margin-top:var(--wp--preset--spacing--40)}.entry-content p img{max-width:100%}.has-gray-background-color,.has-brown-background-color,.has-orange-background-color,.has-yellow-background-color,.has-green-background-color,.has-blue-background-color,.has-purple-background-color,.has-pink-background-color,.has-red-background-color,.wp-block-table table{background-image:linear-gradient(0deg, var(--wp--preset--color--tint), var(--wp--preset--color--tint))}.wp-element-caption{opacity:var(--wp--custom--style-opacity)}.wp-block-separator{opacity:.15}.wp-block-table table:not(.has-text-color) td,.wp-block-table table:not(.has-text-color) th{border-color:var(--wp--preset--color--tint-alt)}.wp-block-table table thead{border-bottom:none;background-image:linear-gradient(0deg, var(--wp--preset--color--tint-alt), var(--wp--preset--color--tint-alt))}.wp-block-table table th{text-align:start}.wp-element-button{transition:all .2s ease-in-out}.wp-element-button:hover,.wp-element-button:focus{filter:brightness(120%)}.wp-element-button:active{filter:brightness(80%)}.wp-element-button.has-background{color:var(--wp--preset--color--contrast)}.wp-block-button.is-style-outline .wp-element-button{position:relative}.wp-block-button.is-style-outline .wp-element-button::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;border:solid 1px;border-radius:inherit;opacity:.5}
