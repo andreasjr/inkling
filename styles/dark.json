@@ -69,9 +69,14 @@
 					"slug": "red"
 				},
 				{
-					"color": "rgba(0,0,0,0.75)",
+					"color": "rgba(25,25,25,0.75)",
 					"name": "Tint",
 					"slug": "tint"
+				},
+				{
+					"color": "rgba(255,255,255,0.10)",
+					"name": "Tint (Alt)",
+					"slug": "tint-alt"
 				}
 			]
 		}
