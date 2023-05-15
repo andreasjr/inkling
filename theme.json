@@ -24,37 +24,37 @@
 			},
 			"spacingSizes": [
 				{
-					"size": "clamp(0.5rem, 5vw, 1rem)",
+					"size": "0.5rem",
 					"slug": "20",
 					"name": "2"
 				},
 				{
-					"size": "clamp(1.5rem, 5vw, 2rem)",
+					"size": "1rem",
 					"slug": "30",
 					"name": "3"
 				},
 				{
-					"size": "clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem)",
+					"size": "1.7rem",
 					"slug": "40",
 					"name": "4"
 				},
 				{
-					"size": "clamp(2.5rem, 8vw, 4.5rem)",
+					"size": "2.5rem",
 					"slug": "50",
 					"name": "5"
 				},
 				{
-					"size": "clamp(3.75rem, 10vw, 7rem)",
+					"size": "3.44rem",
 					"slug": "60",
 					"name": "6"
 				},
 				{
-					"size": "clamp(5rem, 5.25rem + ((1vw - 0.48rem) * 9.096), 8rem)",
+					"size": "4.63rem",
 					"slug": "70",
 					"name": "7"
 				},
 				{
-					"size": "clamp(7rem, 14vw, 11rem)",
+					"size": "6rem",
 					"slug": "80",
 					"name": "8"
 				}
@@ -128,6 +128,11 @@
 					"color": "rgba(255,255,255,0.9)",
 					"name": "Tint",
 					"slug": "tint"
+				},
+				{
+					"color": "rgba(0,0,0,0.10)",
+					"name": "Tint (Alt)",
+					"slug": "tint-alt"
 				}
 			]
 		},
@@ -214,37 +219,37 @@
 			"fontSizes": [
 				{
 					"fluid":false,
-					"size": "0.75em",
+					"size": "0.75rem",
 					"name": "2",
 					"slug": "2"
 				},
 				{
 					"fluid":false,
-					"size": "0.875em",
+					"size": "0.875rem",
 					"name": "3",
 					"slug": "3"
 				},
 				{
 					"fluid":false,
-					"size": "1em",
+					"size": "1rem",
 					"name": "4",
 					"slug": "4"
 				},
 				{
 					"fluid":true,
-					"size": "1.25em",
+					"size": "1.25rem",
 					"name": "7",
 					"slug": "7"
 				},
 				{
 					"fluid":true,
-					"size": "1.5em",
+					"size": "1.5rem",
 					"name": "8",
 					"slug": "8"
 				},
 				{
 					"fluid":true,
-					"size": "1.875em",
+					"size": "1.875rem",
 					"name": "9",
 					"slug": "9"
 				}
@@ -265,12 +270,12 @@
 			"fontSize": "var(--wp--preset--font-size--4)"
 		},
 		"spacing": {
-			"blockGap": "1em",
+			"blockGap": "1rem",
 			"padding": {
-				"left": "clamp(0.5em, 9vw, 5.93em)",
-				"right": "clamp(0.5em, 9vw, 5.93em)",
+				"left": "clamp(var(--wp--preset--spacing--30), 4vw, var(--wp--preset--spacing--80))",
+				"right": "clamp(var(--wp--preset--spacing--30), 4vw, var(--wp--preset--spacing--80))",
 				"top": "0",
-				"bottom": "2em"
+				"bottom": "var(--wp--preset--spacing--80)"
 			}
 		},
 		"elements": {
@@ -285,7 +290,7 @@
 					"bottom": {
 						"color":"var(--wp--preset--color--gray)",
 						"style": "solid",
-						"width": "0.05em"
+						"width": "0.05rem"
 					}
 				},
 				":hover": {
@@ -309,17 +314,17 @@
 					"background": "var(--wp--preset--color--primary)"
 				},
 				"border": {
-					"radius": "0.1875em",
+					"radius": "0.1875rem",
 					"width": "1px",
 					"color": "rgba(55, 53, 47, 0.16)",
 					"style": "solid"
 				},
 				"spacing": {
 					"padding": {
-						"left": "0.5em",
-						"right": "0.5em",
-						"top": "0.5em",
-						"bottom": "0.5em"
+						"left": "0.5rem",
+						"right": "0.5rem",
+						"top": "0.5rem",
+						"bottom": "0.5rem"
 					}
 				}
 			},
@@ -382,15 +387,15 @@
 				"variations": {
 					"outline": {
 						"border": {
-							"radius": "3px",
+							"radius": "0.1875rem",
 							"width": "0"
 						},
 						"spacing": {
 							"padding": {
-								"left": "calc(0.5em + 1px)",
-								"right": "calc(0.5em + 1px)",
-								"top": "calc(0.5em + 1px)",
-								"bottom": "calc(0.5em + 1px)"
+								"left": "calc(0.5rem + 1px)",
+								"right": "calc(0.5rem + 1px)",
+								"top": "calc(0.5rem + 1px)",
+								"bottom": "calc(0.5rem + 1px)"
 							}
 						}
 					}
@@ -408,13 +413,44 @@
 					"left": {
 						"style": "solid",
 						"color": "var(--wp--preset--color--contrast)",
-						"width": "0.1875em"
+						"width": "0.1875rem"
 					}
 				},
 				"spacing": {
 					"padding": {
-						"left": "0.875em",
-						"right": "0.875em"
+						"left": "0.875rem",
+						"right": "0.875rem"
+					}
+				}
+			},
+			"core/table": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--3)"
+				}
+			},
+			"core/navigation": {
+				"elements": {
+					"link": {
+						"border": {
+							"bottom": {
+								"style": "none",
+								"width": "0"
+							},
+							"radius": "0.1875rem"
+						},
+						"spacing": {
+							"padding": {
+								"top": "0.25rem",
+								"bottom": "0.25rem",
+								"left": "0.5rem",
+								"right": "0.5rem"
+							}
+						},
+						":hover": {
+							"color": {
+								"background": "var(--wp--preset--color--tint-alt)"
+							}
+						}
 					}
 				}
 			}
