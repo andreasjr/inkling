@@ -38,3 +38,10 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1. Thi
 License URL: https://scripts.sil.org/OFL 
 Source: https://cyreal.org
 -- End of Lora Font credits --
+
+iA Writer Mono Font
+Copyright 2018 Information Architects Inc. with Reserved Font Name "iA Writer" (https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono). 
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL 
+License URL: https://scripts.sil.org/OFL 
+Source: https://github.com/iaolo/iA-Fonts/blob/master/iA%20Writer%20Mono/LICENSE.md
+-- End of iA Writer Mono Font credits --
