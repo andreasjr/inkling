@@ -1,4 +1,4 @@
-=== Concept ===
+=== Inkling ===
 Contributors: Andreas Reif
 Requires at least: 6.2
 Tested up to: 6.2
@@ -18,8 +18,8 @@ by the UI and aesthetic of Notion.
 
 == Copyright ==
 
-Concept WordPress Theme, (C) 2023 Andreas Reif
-Concept is distributed under the terms of the GNU GPL.
+Inkling WordPress Theme, (C) 2023 Andreas Reif
+Inkling is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
