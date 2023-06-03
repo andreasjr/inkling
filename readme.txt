@@ -8,13 +8,24 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-A theme for WordPress that is inspired
-by the UI and aesthetic of Notion.
+Inkling is a theme for WordPress that is inspired by the UI and aesthetic of Notion.
+Featuring light and dark mode styles, templates for sans-serif, serif, and mono fonts, 
+and a range of familiar colors, this is a template designed to be simple and elegant.
+Since this theme is powered by the Site Editor and Gutenberg, it is completely 
+customizable and enables you, the user, to make it what you want.
 
 == Changelog ==
 
-= 0.8.0 =
+= 1.0.1 =
+* Added separate minified CSS file
+* Updated screenshot
+* Updated theme description
+
+= 1.0.0 =
 * Initial release
+* Features sans-serif, serif, and mono page templates
+* Has light and dark site styles
+* Supports featured images, the site editor, and Gutenberg
 
 == Copyright ==
 
