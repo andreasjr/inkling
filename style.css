@@ -7,11 +7,11 @@ Description: Inkling is a theme for WordPress that is inspired by the UI and aes
 Requires at least: 6.2
 Tested up to: 6.2
 Requires PHP: 7.4
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: inkling
-Tags: blog, portfolio, grid-layout, one-column, wide-blocks, accessibility-ready, block-patterns, block-styles, custom-background, custom-colors, custom-header, custom-logo, featured-images, full-site-editing, notion, markdown, simple, inkling
+Tags: blog, portfolio, grid-layout, one-column, wide-blocks, block-patterns, block-styles, custom-background, custom-colors, custom-header, custom-logo, featured-images, full-site-editing, notion, markdown, simple, inkling
 */
 /* Links */
 .wp-site-blocks a:where(:not(.wp-element-button):not(.wp-block-site-title a):not(.wp-block-post-title a):not(:has(img)):not(.wp-block-navigation a)) {

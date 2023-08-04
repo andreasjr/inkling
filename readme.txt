@@ -16,6 +16,9 @@ customizable and enables you, the user, to make it what you want.
 
 == Changelog ==
 
+= 1.0.2 =
+* Updated theme tags
+
 = 1.0.1 =
 * Added separate minified CSS file
 * Updated screenshot
